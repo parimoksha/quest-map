@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+:root {
+    /* --white: #f3f5f2; */
+    --white: #f9f2d2;
+    /* --light-blue: #7cc1e7; */
+    /* --light-blue: #55a6c3; */
+    --blue: #4f90f6;
+    /* --beige: #f2d17e; */
+    --beige: #f1dfb1;
+    --light-green: #6dbe47;
+    --green: #1d6517;
+    --dark-green: #054204;
+    --brown: #58402e;
+    --dark-brown: #2b1d12;
+    --red: #d32a2a;
+
+    --heading-font: "Pixel Gamer Regular", sans-serif;
+    --body-font: "Fredoka", sans-serif;
+
+    font-family: "Fredoka", sans-serif;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    scrollbar-color: var(--dark-brown) var(--light-green)}
+
+@font-face {
+    font-family: "Pixel Gamer Regular";
+    src: url('./assets/PixelGamer-Regular.otf') format('opentype');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--beige);
+    cursor: url('your-cursor-image.png') 0 0, auto;
+}
+
+::selection {
+  background-color: var(--green); /* The highlight background color */
+  color: var(--beige);            /* The text color inside the highlight */
+}
+
+
+nav {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+
+    width: 80%;
+    background-color: var(--brown);
+    border: 4px solid var(--dark-brown);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 2rem;
+
+    font-size: 1.3rem;
+    color: var(--white);
+    border-radius: 12px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 1.25rem;
+    color: var(--white);
+}
+
+nav ul a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease-out;
+}
+
+nav ul a:hover {
+    color: var(--light-green);
+}
+
+nav .logo i {
+    font-size: 1.75rem;
+    color: var(--red);
+}
+
+
+
+#hero {
+    width: 100vw;
+    height: 100vh;
+    background: url('./assets/sky_and_grass.png');
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    padding-top: 2rem;
+
+}
+
+#hero .hero-title h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 12rem;
+    line-height: 1;
+    color: var(--brown);
+}
+
+#hero .hero-desc-text p {
+    font-size: 1.3rem;
+    color: var(--dark-green);
+}
+
+span.bold {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+.title {
+    position: relative;
+    top: 1rem;
+    margin: 3rem;
+    /* background-color: cornflowerblue; */
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    color: var(--brown);
+}
+
+
+
+#about {
+    width: 100vw;
+    min-height: 100vh;
+
+    background-color: var(--light-green);
+    background: url('./assets/grass_new.png');
+
+    padding: 2rem;
+}
+
+#about .about-content {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    font-size: 1.2rem;
+    color: var(--dark-green);
+}
+
+#about .about-content span.bold {
+    color: var(--brown);
+    font-size: 1.3rem;
+}
+
+#about .about-content .top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about .about-content .top-row .top-row-content p {
+    display: flex;
+    flex-direction: column;
+    margin: 0.75rem;
+}
+
+#about .about-content .top-row .profile-img {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px dashed var(--brown);
+}
+
+#about .about-content .top-row .profile-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#map {
+    /* min-height: 100vh; */
+    padding: 2rem;
+
+    background-color: var(--light-green);
+    background: url('./assets/grass_new.png');
+    /* border: 2px solid red; */
+    /* background-size: cover; */
+    background-repeat: repeat-y;
+}
+
+#map .year-map {
+    position: relative;
+    width: 80%;
+    /* height: 100vh; */
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    /* background-color: cornflowerblue; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    gap: 8px;
+}
+
+#year4.year-map{
+    margin-bottom: 0;
+    /* border: 2px solid red; */
+}
+
+#map .year-map .node {
+    background-color: var(--brown);
+    border: 2px solid black;
+    min-height: 5rem;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#map .year-map .node1 {
+    grid-row: span 2 / span 2;
+}
+
+#map .year-map .node2 {
+    grid-row: span 2 / span 2;
+}
+
+#map .year-map .node3 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+#map .year-map .node4 {
+    grid-row-start: 4;
+}
+
+#map .year-map .node5 {
+    grid-row-start: 4;
+}
+
+#map .year-map .node6 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 5;
+}
+
+#map .year-map .node7 {
+    grid-row-start: 6;
+}
+
+#map .year-map .node8 {
+    grid-row-start: 6;
+}
+
+#map .year-map .node9 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 7;
+}
+
+#map .year-map .node10 {
+    grid-row-start: 8;
+}
+
+#map .year-map .node11 {
+    grid-row-start: 8;
+}
+
+#map .year-map .node12 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 9;
+}
+
+#map .year-map .node13 {
+    grid-row-start: 10;
+}
+
+#map .year-map .node14 {
+    grid-row-start: 10;
+}
+
+
+
+#map .year-map .arrow-lr,
+#map .year-map .arrow-rl {
+    width: 55%;
+    height: 10.5rem;
+    overflow: hidden;
+    /* display: inline-block; */
+    /* height: min-content; */
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+
+    /*👉background: url('./assets/arrow_lr.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 9;👈*/
+}
+
+#map .year-map .arrow-lr img,
+#map .year-map .arrow-rl img {
+    /* height: 100%; */
+    /* display: block; */
+    width: 100%;
+    object-fit: contain;
+}
+
+
+#map .year-map .blank {
+    background: none;
+    border: none;
+}
+
+#map .year-map .year-heading {
+    height: 10rem;
+    width: 150%;
+    /* position: relative; */
+    /* top: 50%; */
+    /* bottom: 0; */
+    /* margin: auto 0; */
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: var(--heading-font);
+    color: var(--brown);
+
+    display: flex;
+    gap: 2rem;
+}
+
+/*👉#map .year-map .year-heading i {
+    font-size: 6rem;
+}👈*/
+
+#map .year-map .year-heading .year-heading-icon {
+    height: 100%;
+}
+
+#map .year-map .year-heading .year-heading-icon img {
+    height: 100%;
+}
+
+/*👉#map .year-map .year-heading-icon {
+    height: 50%;
+    position: relative;
+    top: 30%;
+    ➡ left: 50%; ⬅
+    background: none;
+    border: none;
+    justify-content: flex-end;
+
+    font-size: 6rem;
+    ➡ text-align: right; ⬅
+    color: var(--red);
+}👈*/
+
+
+#map .year-map .checkpoint {
+    min-height: 10rem;
+
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    
+    font-size: 2rem;
+    /* background-color: transparent; */
+    background: url('./assets/checkpoint2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+    padding: 1rem;
+    transition: all 0.25s ease-out;
+}
+
+#map .year-map .checkpoint p {
+    /* font-family: var(--heading-font); */
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--white);
+    /* -webkit-text-stroke: 3px var(--brown);  */
+    text-shadow: 
+        -2px -2px 0 var(--dark-brown),  
+         2px -2px 0 var(--dark-brown),
+        -2px  2px 0 var(--dark-brown),
+         2px  2px 0 var(--dark-brown);
+    /* background: var(--blue); */
+}
+
+
+#map .year-map .checkpoint:hover {
+    transform: scale(1.1);
+}
+
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+#overlay .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+
+    transition: all 0.25s ease-out;
+}
+
+#overlay .close-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+#overlay .close-btn:hover img {
+    transform: scale(0.9);
+}
+
+#overlay .quest-container {
+    width: 90%;
+    height: 90%;
+    background-color: var(--beige);
+    background: url('./assets/quest_box2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5rem;
+}
+
+#overlay .quest-container .quest-info {
+    max-width: 100%;
+    max-height: 100%;
+    /* background-color: cornflowerblue; */
+    padding: 2rem 3rem;
+    font-size: 1.3rem;
+    overflow-y: scroll;
+
+}
+
+#overlay .quest-container .quest-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--brown);
+}
+
+#overlay .quest-container .quest-info p {
+    margin-bottom: 1.5rem;
+    color: var(--dark-green);
+}
+
+#overlay .quest-container .quest-info .bold {
+    color: var(--dark-brown);
+}
+
+#overlay .quest-container .quest-info .quest-info-text-smart {
+    font-size: 2rem;
+}
+
+
+
+
+
+#side-quests {
+    min-height: 100vh;
+    padding: 2rem;
+
+    background-color: var(--light-green);
+    background: url('./assets/grass_new.png');
+    /* border: 2px solid red; */
+    /* background-size: cover; */
+    background-repeat: repeat-y;
+}
+
+#side-quests .sidequests-grid {
+    width: 80%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+#side-quests .sidequests-grid .quest {
+    width: 100%;
+    min-height: 25rem;
+    /* background-color: cornflowerblue; */
+    background-color: var(--brown);
+    background: url('./assets/sidequest_box.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 4rem 5rem;
+
+    font-size: 1.1rem;
+    color: var(--dark-green);
+
+    transition: all 0.3s ease-out;
+}
+
+#side-quests .sidequests-grid .quest:hover {
+    transform: scale(1.05);
+}
+
+#side-quests .sidequests-grid .quest .quest-num {
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    color: var(--green);
+}
+
+#side-quests .sidequests-grid .quest h3 {
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+    color: var(--dark-brown);
+}
+
+#side-quests .sidequests-grid .quest .sidequest-desc {
+    margin-bottom: 1rem;
+}
+
+#side-quests .sidequests-grid .quest .sidequest-smart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+#side-quests .sidequests-grid .quest span.bold {
+    font-size: 1.2rem;
+    color: var(--dark-brown);
+}
+
+#side-quests .sidequests-grid .quest .progress-bar .progress-bar-steps {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+#side-quests .sidequests-grid .quest .progress-bar .progress-step {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: coral;
+    background: url('./assets/progressbar_empty.png');
+    background-size: cover;
+}
+
+#side-quests .sidequests-grid .quest .progress-bar .progress-step.active {
+    background: url('./assets/progressbar_filled.png');
+    background-size: cover;
+}
+
+
+
+#credits {
+    min-height: 100vh;
+    padding: 2rem;
+
+    background-color: var(--light-green);
+    background: url('./assets/grass_new.png');
+    /* border: 2px solid red; */
+    /* background-size: cover; */
+    background-repeat: repeat-y;
+}
+
+
+#credits .credits-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#credits .credits-content .credits-table {
+    background-color: var(--brown);
+    border: 4px solid var(--dark-brown);
+    color: var(--beige);
+    border-radius: 12px;
+    padding: 2rem;
+
+    /* border-collapse: collapse; */
+    text-align: left;
+}
+
+.credits-table th:first-child,
+.credits-table td:first-child {
+    width: 30%;
+}
+
+.credits-table th:nth-child(2),
+.credits-table td:nth-child(2) {
+    width: 70%;
+}
+
+#credits .credits-content .credits-table th,
+#credits .credits-content .credits-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid var(--light-green);
+    vertical-align: top;
+}
+
+/*👉#credits .credits-content .credits-table tbody:last-child {
+    border-bottom: none;
+}👈*/
+
+#credits .credits-content .credits-table th {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+#credits .credits-content .credits-table td a {
+    color: var(--light-green);
+}
+
+/*👉#credits .credits-content .credits-table td a:hover {
+    color: var(--green);
+}👈*/
+
+#credits .credits-content .credits-table tbody tr {
+    transition: all 0.2s ease-out;
+}
+
+#credits .credits-content .credits-table tbody tr:hover {
+    transform: scale(1.02);
+}
+
+
+footer {
+    height: 2rem;
+    width: 100%;
+    background-color: var(--brown);
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--beige);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--light-green);
+    transition: all 0.25s ease-out;
+}
+
+footer a:hover {
+    color: var(--green);
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Map</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <i class="ri-flag-fill"></i>
+        </div>
+        <ul>
+            <li class="nav-item"><a href="#hero">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#map">Map</a></li>
+            <li class="nav-item"><a href="#side-quests">Side Quests</a></li>
+            <li class="nav-item"><a href="#credits">Credits</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <!-- hero -->
+        <section id="hero">
+            <div class="hero-title">
+                <h1>Quest Map</h1>
+            </div>
+
+            <div class="hero-desc-text">
+                <p><span class="bold">Course Name:</span> ABCD1234 - something something else</p>
+                <p><span class="bold">Assignment:</span> S.M.A.R.T Goals something Lorem, ipsum dolor.</p>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about">
+            <div class="title">
+                <h1>About</h1>
+            </div>
+
+            <div class="about-content">
+                <div class="top-row">
+                    <div class="profile-img">
+                        <img src="./assets/profile.png" alt="profile image">
+                    </div>
+                    <div class="top-row-content">
+                        <p><span class="bold">Name:</span> Strawberry Skeleton</p>
+                        <p><span class="bold">Age:</span> 18</p>
+                        <p><span class="bold">Status:</span> Year 1 @ Uni CS</p>
+                        <p><span class="bold">Interests:</span> Coding / Playing / something</p>
+                    </div>
+                </div>
+
+                <div class="bottom-row">
+                    <p>
+                        <span class="bold">Ultimate Goal:</span>
+                        <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam hic exercitationem unde veritatis natus quas repellat deleniti provident. Asperiores similique quibusdam maiores, enim quis ducimus.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni rem, libero dolor hic explicabo iure.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- map -->
+        <section id="map">
+            <div class="title">
+                <h1>Map</h1>
+            </div>
+
+            <div id="overlay">
+                <div class="close-btn">
+                        <img src="./assets/close_btn.png" alt="close button">
+                </div>
+                <div class="quest-container">
+                    
+                    <div class="quest-info">
+                        <h2><span class="bold">Quest: </span><span id="quest-info-title">lorem ipsum</span></h2>
+
+                        <p>
+                            <span class="bold">Description:</span>
+                            <br>
+                            <span id="quest-info-desc">
+                                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, minima debitis recusandae eius eaque illum? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. -->
+                            </span>
+                        </p>
+
+                        <p class="quest-info-text-smart" id="quest-info-smart">
+                            <span class="bold">S :</span> something
+                            <br>
+                            <span class="bold">M :</span> something
+                            <br>
+                            <span class="bold">A :</span> something
+                            <br>
+                            <span class="bold">R :</span> something
+                            <br>
+                            <span class="bold">T :</span> something
+                            <br>
+                        </p>
+
+                        <p>
+                            <span class="bold">Why It Matters: </span>
+                            <br>
+                            <span id="quest-info-why">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ullam at, dolore dignissimos enim, veritatis maxime quibusdam blanditiis doloremque commodi tempora et. Accusantium et, eius consequatur delectus sunt necessitatibus officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi.
+                            </span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="year1" class="year-map">
+
+                <div class="node node1 year-heading">
+                    <!-- <i class="ri-signpost-fill"></i> -->
+                     <div class="year-heading-icon">
+                        <img src="./assets/flag_rock.png" alt="year heading icon">
+                     </div>
+                    <h2>Year One</h2>
+                </div>
+
+                <div class="node node2 blank">
+                </div>
+
+                <div class="node node3 arrow-lr">
+                    <img src="./assets/arrow_lr.png" alt="arrow">
+                </div>
+
+                <div class="node node4 blank"></div>
+
+                <div class="node node5 checkpoint" id="y1-n1">
+                    <p>explore</p>
+                </div>
+
+                <div class="node node6 arrow-rl">
+                    <img src="./assets/arrow_rl.png" alt="arrow">
+                </div>
+
+                <div class="node node7 checkpoint" id="y1-n2">
+                    <p>learn</p>
+                </div>
+
+                <div class="node node8 blank"></div>
+
+                <div class="node node9 arrow-lr">
+                    <img src="./assets/arrow_lr.png" alt="arrow">
+                </div>
+                
+                <div class="node node10 blank"></div>
+
+                <div class="node node11 checkpoint" id="y1-n3">
+                    <p>lorem</p>
+                </div>
+
+                <div class="node node12 arrow-rl">
+                    <img src="./assets//arrow_rl.png" alt="arrow">
+                </div>
+
+                <div class="node node13 checkpoint" id="y1-n4">
+                    <p>ipsum</p>
+                </div>
+
+                <div class="node node14 blank"></div>
+
+            </div>
+
+
+            <div id="year2" class="year-map">
+
+                <div class="node node1 year-heading">
+                    <!-- <i class="ri-signpost-fill"></i> -->
+                     <div class="year-heading-icon">
+                        <img src="./assets/flag_rock.png" alt="year heading icon">
+                     </div>
+                    <h2>Year Two</h2>
+                </div>
+
+                <div class="node node2 blank">
+                </div>
+
+                <div class="node node3 arrow-lr">
+                    <img src="./assets/arrow_lr.png" alt="arrow">
+                </div>
+
+                <div class="node node4 blank"></div>
+
+                <div class="node node5 checkpoint" id="y2-n1">
+                    <p>depth</p>
+                </div>
+
+                <div class="node node6 arrow-rl">
+                    <img src="./assets/arrow_rl.png" alt="arrow">
+                </div>
+
+                <div class="node node7 checkpoint" id="y2-n2">
+                    <p>intern</p>
+                </div>
+
+                <div class="node node8 blank"></div>
+
+                <div class="node node9 arrow-lr">
+                    <img src="./assets/arrow_lr.png" alt="arrow">
+                </div>
+                
+                <div class="node node10 blank"></div>
+
+                <div class="node node11 checkpoint" id="y2-n3">
+                    <p>projects</p>
+                </div>
+
+                <div class="node node12 arrow-rl">
+                    <img src="./assets//arrow_rl.png" alt="arrow">
+                </div>
+
+                <div class="node node13 checkpoint" id="y2-n4">
+                    <p>lorem</p>
+                </div>
+
+                <div class="node node14 blank"></div>
+
+            </div>
+
+
+            <div id="year3" class="year-map">
+
+                <div class="node node1 year-heading">
+                    <!-- <i class="ri-signpost-fill"></i> -->
+                     <div class="year-heading-icon">
+                        <img src="./assets/flag_rock.png" alt="year heading icon">
+                     </div>
+                    <h2>Year Three</h2>
+                </div>
+
+                <div class="node node2 blank">
+                </div>
+
+                <div class="node node3 arrow-lr">
+                    <img src="./assets/arrow_lr.png" alt="arrow">
+                </div>
+
+                <div class="node node4 blank"></div>
+
+                <div class="node node5 checkpoint" id="y3-n1">
+                    <p>niche</p>
+                </div>
+
+                <div class="node node6 arrow-rl">
+                    <img src="./assets/arrow_rl.png" alt="arrow">
+                </div>
+
+                <div class="node node7 checkpoint" id="y3-n2">
+                    <p>projects</p>
+                </div>
+
+                <div class="node node8 blank"></div>
+
+                <div class="node node9 arrow-lr">
+                    <img src="./assets/arrow_lr.png" alt="arrow">
+                </div>
+                
+                <div class="node node10 blank"></div>
+
+                <div class="node node11 checkpoint" id="y3-n3">
+                    <p>exchange</p>
+                </div>
+
+                <div class="node node12 arrow-rl">
+                    <img src="./assets//arrow_rl.png" alt="arrow">
+                </div>
+
+                <div class="node node13 checkpoint" id="y3-n4">
+                    <p>diverse</p>
+                </div>
+
+                <div class="node node14 blank"></div>
+
+            </div>
+
+
+            <div id="year4" class="year-map">
+
+                <div class="node node1 year-heading">
+                    <!-- <i class="ri-signpost-fill"></i> -->
+                     <div class="year-heading-icon">
+                        <img src="./assets/flag_rock.png" alt="year heading icon">
+                     </div>
+                    <h2>Year Four</h2>
+                </div>
+
+                <div class="node node2 blank">
+                </div>
+
+                <div class="node node3 arrow-lr">
+                    <img src="./assets/arrow_lr.png" alt="arrow">
+                </div>
+
+                <div class="node node4 blank"></div>
+
+                <div class="node node5 checkpoint" id="y4-n1">
+                    <p>cgpa</p>
+                </div>
+
+                <div class="node node6 arrow-rl">
+                    <img src="./assets/arrow_rl.png" alt="arrow">
+                </div>
+
+                <div class="node node7 checkpoint" id="y4-n2">
+                    <p>projects</p>
+                </div>
+
+                <div class="node node8 blank"></div>
+
+                <div class="node node9 arrow-lr">
+                    <img src="./assets/arrow_lr.png" alt="arrow">
+                </div>
+                
+                <div class="node node10 blank"></div>
+
+                <div class="node node11 checkpoint" id="y4-n3">
+                    <p>niche</p>
+                </div>
+
+                <div class="node node12 arrow-rl">
+                    <img src="./assets//arrow_rl.png" alt="arrow">
+                </div>
+
+                <div class="node node13 checkpoint" id="y4-n4">
+                    <p>job</p>
+                </div>
+
+                <div class="node node14 blank"></div>
+
+            </div>
+
+
+        </section>
+
+        <!-- side quests -->
+        <section id="side-quests">
+            <div class="title">
+                <h1>Side Quests</h1>
+            </div>
+
+            <div class="sidequests-grid">
+
+                <div class="quest">
+                    <p class="quest-num">QUEST #1</p>
+
+                    <h3>Learn to Play Piano</h3>
+
+                    <p class="sidequest-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus minima neque rerum excepturi. Totam a maxime repudiandae corrupti natus dignissimos!
+                    </p>
+
+                    <div class="sidequest-smart">
+                        <p><span class="bold">S :</span> something</p>
+                        <p><span class="bold">M :</span> something</p>
+                        <p><span class="bold">A :</span> something</p>
+                        <p><span class="bold">R :</span> something</p>
+                        <p><span class="bold">T :</span> something</p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <p><span class="bold">Progress: </span></p>
+
+                        <div class="progress-bar-steps">
+                            <div class="progress-step active"></div>
+                            <div class="progress-step active"></div>
+                            <div class="progress-step active"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quest">
+                    <p class="quest-num">QUEST #2</p>
+
+                    <h3>Learn to Play Cricket</h3>
+
+                    <p class="sidequest-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus minima neque rerum excepturi. Totam a maxime repudiandae corrupti natus dignissimos!
+                    </p>
+
+                    <div class="sidequest-smart">
+                        <p><span class="bold">S :</span> something</p>
+                        <p><span class="bold">M :</span> something</p>
+                        <p><span class="bold">A :</span> something</p>
+                        <p><span class="bold">R :</span> something</p>
+                        <p><span class="bold">T :</span> something</p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <p><span class="bold">Progress: </span></p>
+
+                        <div class="progress-bar-steps">
+                            <div class="progress-step active"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quest">
+                    <p class="quest-num">QUEST #3</p>
+
+                    <h3>Join Robotics Club</h3>
+
+                    <p class="sidequest-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus minima neque rerum excepturi. Totam a maxime repudiandae corrupti natus dignissimos!
+                    </p>
+
+                    <div class="sidequest-smart">
+                        <p><span class="bold">S :</span> something</p>
+                        <p><span class="bold">M :</span> something</p>
+                        <p><span class="bold">A :</span> something</p>
+                        <p><span class="bold">R :</span> something</p>
+                        <p><span class="bold">T :</span> something</p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <p><span class="bold">Progress: </span></p>
+
+                        <div class="progress-bar-steps">
+                            <div class="progress-step active"></div>
+                            <div class="progress-step active"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- challenges -->
+        <!-- <section id="challenges"></section> -->
+
+        <!-- credits -->
+        <section id="credits">
+            <div class="title">
+                <h1>Credits</h1>
+            </div>
+
+            <div class="credits-content">
+                <table class="credits-table">
+                    <thead>
+                        <tr>
+                            <th>Resource/Asset</th>
+                            <th>Source and Citations</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Font: Pixel Gamer</td>
+                            <td><p>
+                               Ditatype (n.d.). Pixel Gamer [Typeface]. DaFont. <a href="https://www.dafont.com/pixel-gamer.font">https://www.dafont.com/pixel-gamer.font</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Font: Fredoka</td>
+                            <td><p>
+                                Google Fonts. (n.d.). Fredoka [Typeface]. Google Fonts. <a href="https://fonts.google.com/specimen/Fredoka">https://fonts.google.com/specimen/Fredoka</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Icon Pack: Remix Icons</td>
+                            <td><p>
+                                Remix Design. (n.d.). Remix Icon (Version 4.x) [Icon pack]. <a href="https://remixicon.com/">https://remixicon.com/</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Color Palette Inspiration</td>
+                            <td><p>
+                                Jessica Torres. (n.d.). Color palette reference [Pinterest Pin]. Pinterest. <a href="https://in.pinterest.com/pin/427701295885740494/">https://in.pinterest.com/pin/427701295885740494/</a> (Original source work, if known: Original Creator/Website Name)
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Hero Background</td>
+                            <td><p>
+                                Notion Dashboard by Violet. (n.d.). Hero background illustration [Pinterest Pin]. Pinterest. <a href="https://in.pinterest.com/pin/1128573987906061983/">https://in.pinterest.com/pin/1128573987906061983/</a> (Original source work, www.behance.net)
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Grass Background</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of grass in pixel art style [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Profile Picture</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of a red stag beetle warrior in pixel art style with a green cloak and lantern [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Profile Picture</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of a red stag beetle warrior in pixel art style with a green cloak and lantern [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Rock Image</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of a mossy rock mound with grass in pixel art style [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Rock Image</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of a mossy rock mound with grass in pixel art style [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Checkpoint Image</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of a pixel art red checkpoint flag attached to a wooden pole with a gold topper, anchored in a grassy rock base [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Quest Board Image</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of a rectangular pixel art UI box featuring a dark wooden border and a light beige parchment paper center [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Progress Bar Box Empty Image</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of a square pixel art UI slot asset featuring a thick dark wood frame around an empty beige canvas tile [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Asset: Progress Bar Filled Image</td>
+                            <td><p>
+                                Microsoft. (2026). Copilot generated image of a square pixel art UI progress bar segment featuring a dark wooden frame filled with a bright blue active status fill [Generative AI model]. <a href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Tool: Background Remover</td>
+                            <td><p>
+                                Photoroom. (n.d.). Photoroom online background remover [Software]. <a href="https://www.photoroom.com/tools/background-remover">https://www.photoroom.com/tools/background-remover</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Tool: PNG to SVG Converter</td>
+                            <td><p>
+                                PNGtoSVG. (n.d.). PNGtoSVG online image converter [Software]. <a href="https://pngtosvg.com/">https://pngtosvg.com/</a>
+                            </p></td>
+                        </tr>
+
+                        <tr>
+                            <td>Tool: CSS Grid Generator</td>
+                            <td><p>
+                                CSS Grid Generator. (n.d.). CSS grid layout generator (drag and drop) [Software]. <a href="https://cssgridgenerator.io/">https://cssgridgenerator.io/</a>
+                            </p></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; Quest Map 2026 | Made by <a href="https://github.com/strawberry">@StrawberrySkeleton</a></p>
+    </footer>
+
+</body>
+</html>
