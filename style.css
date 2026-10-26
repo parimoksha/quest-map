@@ -496,7 +496,7 @@ span.bold {
     color: var(--dark-brown);
 }
 
-#overlay .quest-container .quest-info .quest-info-text-smart {
+#overlay .quest-container .quest-info .quest-info-text-smart span.bold {
     font-size: 2rem;
 }
 
