@@ -691,3 +691,338 @@ footer a {
 footer a:hover {
     color: var(--green);
 }
+
+
+
+
+/* ==========================================================================
+   AI GENERATED CODE FROM NOW ON
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   2. Medium Laptops & 14-Inch Screens (<= 1440px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1440px) {
+    nav {
+        width: 90%;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    #hero .hero-title h1 {
+        font-size: 8rem;
+    }
+
+    #about .about-content,
+    #map .year-map,
+    #side-quests .sidequests-grid,
+    #credits .credits-content {
+        width: 90%;
+    }
+
+    /* Modal Overlay for 14-inch / Medium Laptops */
+    #overlay .quest-container {
+        width: 80vw;
+        max-width: 900px;
+        height: 75vh;
+        max-height: 650px;
+        background-size: 100% 100%;
+        padding: 4rem 3rem 3rem 3rem;
+        margin: auto;
+    }
+
+    #overlay .quest-container .quest-info {
+        height: 100%;
+        max-height: 100%;
+        padding: 1rem 1.5rem;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    #overlay .quest-container .quest-info h2 {
+        font-size: 2.2rem;
+    }
+
+    #overlay .quest-container .quest-info .quest-info-text-smart {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* --------------------------------------------------------------------------
+   3. Tablets & Small Laptops (<= 992px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 992px) {
+    nav {
+        width: 92%;
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 0.85rem;
+    }
+
+    #hero .hero-title h1 {
+        font-size: 6rem;
+    }
+
+    #hero .hero-desc-text p {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    #about .about-content .top-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    #about .about-content .top-row .top-row-content p {
+        align-items: center;
+    }
+
+    #about .about-content .top-row .profile-img {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    #map .year-map {
+        width: 95%;
+        gap: 4px;
+    }
+
+    #map .year-map .year-heading {
+        width: 100%;
+        font-size: 2.5rem;
+        justify-content: center;
+    }
+
+    #map .year-map .arrow-lr,
+    #map .year-map .arrow-rl {
+        width: 80%;
+        height: 7.5rem;
+    }
+
+    #map .year-map .checkpoint p {
+        font-size: 2.2rem;
+    }
+
+    /* Side Quests Auto-Expand Frame */
+    #side-quests .sidequests-grid .quest {
+        min-height: auto;
+        height: auto;
+        background-size: 100% 100%;
+        padding: 3rem 2.5rem 2.5rem 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #side-quests .sidequests-grid .quest .sidequest-smart {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.2rem;
+        justify-content: flex-start;
+        margin: 1rem 0;
+    }
+
+    /* Modal Overlay for Tablets */
+    #overlay {
+        padding: 1rem;
+    }
+
+    #overlay .quest-container {
+        width: 100%;
+        max-width: 600px;
+        height: 85vh;
+        max-height: 550px;
+        padding: 3.5rem 2rem 2rem 2rem;
+        position: relative;
+    }
+
+    #overlay .quest-container .quest-info {
+        padding: 0.5rem 1rem;
+    }
+
+    #overlay .quest-container .quest-info h2 {
+        font-size: 2rem;
+    }
+
+    #overlay .quest-container .quest-info .quest-info-text-smart {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* --------------------------------------------------------------------------
+   4. Mobile Phones (Portrait / <= 640px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+    nav {
+        top: 0.75rem;
+        width: 95%;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.6rem 1rem;
+        border-width: 3px;
+    }
+
+    nav ul {
+        gap: 0.6rem;
+        font-size: 0.95rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .logo i {
+        font-size: 1.4rem;
+    }
+
+    #hero {
+        padding-top: 4rem;
+    }
+
+    #hero .hero-title h1 {
+        font-size: 3.8rem;
+    }
+
+    #hero .hero-desc-text p {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2.2rem;
+        margin: 2rem 1rem;
+    }
+
+    #about .about-content {
+        width: 100%;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    #about .about-content .top-row .profile-img {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    #about .about-content .bottom-row {
+        text-align: justify;
+    }
+
+    #map {
+        padding: 1rem 0.5rem;
+    }
+
+    #map .year-map {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    #map .year-map .year-heading {
+        font-size: 1.8rem;
+        gap: 0.8rem;
+    }
+
+    #map .year-map .year-heading .year-heading-icon {
+        height: 3.5rem;
+    }
+
+    #map .year-map .arrow-lr,
+    #map .year-map .arrow-rl {
+        width: 95%;
+        height: 5rem;
+    }
+
+    #map .year-map .checkpoint {
+        min-height: 7rem;
+        padding: 0.5rem;
+    }
+
+    #map .year-map .checkpoint p {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    #side-quests {
+        padding: 1rem 0.5rem;
+    }
+
+    #side-quests .sidequests-grid .quest {
+        padding: 2.2rem 1.5rem 1.8rem 1.5rem;
+    }
+
+    #side-quests .sidequests-grid .quest h3 {
+        font-size: 1.3rem;
+    }
+
+    #side-quests .sidequests-grid .quest .sidequest-smart {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    #side-quests .sidequests-grid .quest .progress-bar .progress-step {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #credits {
+        padding: 1rem 0.5rem;
+    }
+
+    #credits .credits-content {
+        width: 100%;
+    }
+
+    #credits .credits-content .credits-table {
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #credits .credits-content .credits-table th,
+    #credits .credits-content .credits-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .credits-table th:first-child,
+    .credits-table td:first-child {
+        width: 40%;
+    }
+
+    .credits-table th:nth-child(2),
+    .credits-table td:nth-child(2) {
+        width: 60%;
+    }
+
+    #overlay .close-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    #overlay .quest-container {
+        width: 95vw;
+        height: 82vh;
+        padding: 3rem 1rem 1.5rem 1rem;
+    }
+
+    #overlay .quest-container .quest-info {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    #overlay .quest-container .quest-info h2 {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+
+    #overlay .quest-container .quest-info .quest-info-text-smart {
+        font-size: 1.05rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}
