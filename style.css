@@ -11,6 +11,7 @@
     --light-green: #6dbe47;
     --green: #1d6517;
     --dark-green: #054204;
+    --light-brown: #c3a28a;
     --brown: #58402e;
     --dark-brown: #2b1d12;
     --red: #d32a2a;
@@ -22,7 +23,7 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 
-    scrollbar-color: var(--dark-brown) var(--light-green)}
+    scrollbar-color: var(--dark-brown) var(--light-brown)}
 
 @font-face {
     font-family: "Pixel Gamer Regular";
@@ -42,7 +43,9 @@ html {
 }
 
 body {
+    width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
     background-color: var(--beige);
     cursor: url('your-cursor-image.png') 0 0, auto;
 }
